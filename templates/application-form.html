@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Application{% endblock %}
+
+{% block content %}
+    <h1>Join our Team!</h1>
+    
+    <div id="instructions">
+        <p>Do you enjoy a fast-paced environment where you can help people every 
+            day? Are you a problem solver who puts the customers' needs first? 
+            If so, then you'll find the perfect fit at our company.</p>
+        <p>Complete the following information:</p>
+    </div>
+    
+    <div id="form-section">
+        <form action="/application" method="POST">
+            <label for="field-firstname">First Name: </label>
+            <input type="text" class="input-box" name="firstname" id="field-firstname">
+            <br>
+            <label for="field-lastname">Last Name: </label>
+            <input type="text"class="input-box" style="font-weight: bold" name="lastname" id="field-lastname">
+            <br>
+            <label for="field-salaryreqs">Salary Requirements ($): </label>
+            <input type="text" class="input-box" name="salary" id="salaryreqs">
+            <br>
+            <label for="position">Position of interest: </label>
+            <select id="position" class="input-box" name="select">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+            </br>
+            <input type="submit" class="button" value="Submit">
+        </form>
+    </div>
+{% endblock %}
+
+<!-- 
+
+<!doctype html>
+<html>
+<head>
+    <title>Application</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Join our Team!</h1>
+    
+    <div>
+        <p>Do you enjoy a fast-paced environment where you can help people every 
+            day? Are you a problem solver who puts the customers' needs first? 
+            If so, then you'll find the perfect fit at our company.</p>
+        <p>Complete the following information:</p>
+    </div>
+    
+    <div>
+        <form action="/application" method="POST">
+            <label for="field-firstname">First Name: </label>
+            <input type="text" class="input-box" name="firstname" id="field-firstname">
+            <br>
+            <label for="field-lastname">Last Name: </label>
+            <input type="text"class="input-box" style="font-weight: bold" name="lastname" id="field-lastname">
+            <br>
+            <label for="field-salaryreqs">Salary Requirements ($): </label>
+            <input type="text" class="input-box" name="salary" id="salaryreqs">
+            <br>
+            <label for="position">Select which position you are applying for.</label>
+            <select id="position" class="input-box" name="select">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+            </br>
+            <input type="submit" class="button" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html> -->

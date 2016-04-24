@@ -1,0 +1,61 @@
+
+h1 {
+    font-family: arial;
+    margin: 20px;
+}
+
+p {
+    font-family: arial;
+}
+
+body {
+    font-family: arial;
+}
+
+#instructions {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.input-box {
+    background-color: #FAFAAA;
+}
+
+.button {
+    background-color: #F0F002;
+}
+
+#form-section {
+    margin: 15px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label, input {
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    text-align: right;
+}
+
+label + input {
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
+
+input + input {
+    float: right;
+}
+
+.button {
+    width: 30%;
+    font-weight: bold;
+    font-size: 12px;
+}
